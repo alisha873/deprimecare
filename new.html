@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="we bring to you “Déprimécare“. 
+    Déprimécare“ is a website that in a nutshell, aims to provide mental health support to the student community all across India by providing a platform to reach out to well trained and qualified mental health professionals as well as counsellors from their very own colleges while also maintaining an anonymous front to protect their identity which would help in creating a safe place where students can open up and seek help and support without the fear of being looked at in a negative way.The site connects students to mental health professionals with different skill sets and specialties. It makes available their profiles so students can choose a professional they feel suits their needs and personal comfort level. The other feature provided is the counsellor connect which allows students to connect with the counsellors of their very own colleges thus providing them with a sense of safety, knowing that they have the option to reach out to somebody around them. With the goal of creating a safe community which brings together students and counsellors, Déprimécare is here to render care to all those who need it with the hope of growing and improving with the community.">
+    <meta name="keywords" content="anxiety,depression,self help,counselling,counsellor,therapy,therapist,suicide,mental health,anxiety pills, depression pills">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <title>Déprimécare</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #eaeaea;
+            color: #333;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #000000;
+            margin: 0;
+        }
+        .tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .tab {
+            padding: 15px 25px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 1em;
+        }
+        .tab:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+        .content {
+            display: none;
+            background-color: white;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 4px 8px ;
+        }
+        .active {
+            display: block;
+        }
+        .active-tab {
+            background-color: #0056b3;
+        }
+        img {
+            width: 1170px;;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: rgba(0, 0, 0,);
+            margin-top: 0;
+            text-align: center;
+        }
+        .profile {
+            display: flrgba(0, 0, 0, 0.2)ex;
+            align-items: center;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #ccc;
+            padding: 10px 0;
+        }
+        .profile img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Déprimécare</h1>
+    </header>
+
+    <div class="tabs">
+        <button class="tab active-tab" onclick="openTab(event, 'home')">Home</button>
+        <button class="tab" onclick="openTab(event, 'mentalHealth')">Reach Out to a Mental Health Professional</button>
+        <button class="tab" onclick="openTab(event, 'collegeCounselor')">Reach Out to a College Counselor</button>
+        <button class="tab" onclick="openTab(event, 'selfHelp')">Self Help Resources</button>
+        <button class="tab" onclick="openTab(event, 'aboutUs')">About Us</button>
+    </div>
+
+    <div id="home" class="content active">
+        <h2>Welcome to Déprimécare</h2>
+        <img src="16.jpeg" alt="Mental Health">
+        <p>Here, you can find resources and support for mental health and educational counseling.</p>
+    </div>
+
+    <div id="mentalHealth" class="content">
+        <h2>Reach Out to a Mental Health Professional</h2>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=sarah_thompson" target="_blank">
+                <img src="1.jpeg" alt="Counselor 1">
+                <div>
+                    <strong>Dr. Sarah Thompson</strong><br>
+                    Clinical Psychologist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=john_doe" target="_blank">
+                <img src="10.jpeg" alt="Counselor 2">
+                <div>
+                    <strong>Mr. John Doe</strong><br>
+                    Counseling Therapist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=emily_johnson" target="_blank">
+                <img src="2.jpeg" alt="Counselor 3">
+                <div>
+                    <strong>Dr. Emily Johnson</strong><br>
+                    Licensed Mental Health Counselor
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=maria_garcia" target="_blank">
+                <img src="3.jpeg" alt="Counselor 4">
+                <div>
+                    <strong>Ms. Maria Garcia</strong><br>
+                    School Psychologist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=david_lee" target="_blank">
+                <img src="11.jpeg" alt="Counselor 5">
+                <div>
+                    <strong>Dr. David Lee</strong><br>
+                    Psychiatrist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=linda_white" target="_blank">
+                <img src="4.jpeg" alt="Counselor 6">
+                <div>
+                    <strong>Ms. Linda White</strong><br>
+                    Clinical Social Worker
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=james_brown" target="_blank">
+                <img src="12.jpeg" alt="Counselor 7">
+                <div>
+                    <strong>Dr. James Brown</strong><br>
+                    Family Therapist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=anna_patel" target="_blank">
+                <img src="9.jpeg" alt="Counselor 8">
+                <div>
+                    <strong>Ms. Anna Patel</strong><br>
+                    Substance Abuse Counselor
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=michael_smith" target="_blank">
+                <img src="13.jpeg" alt="Counselor 9">
+                <div>
+                    <strong>Dr. Michael Smith</strong><br>
+                    Cognitive Behavioral Therapist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=olivia_taylor" target="_blank">
+                <img src="5.jpeg" alt="Counselor 10">
+                <div>
+                    <strong>Ms. Olivia Taylor</strong><br>
+                    Art Therapist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=robert_wilson" target="_blank">
+                <img src="15.jpeg" alt="Counselor 11">
+                <div>
+                    <strong>Dr. Robert Wilson</strong><br>
+                    Clinical Psychologist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=sophia_harris" target="_blank">
+                <img src="6.jpeg" alt="Counselor 12">
+                <div>
+                    <strong>Ms. Sophia Harris</strong><br>
+                    Play Therapist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=kevin_lewis" target="_blank">
+                <img src="14.jpeg" alt="Counselor 13">
+                <div>
+                    <strong>Dr. Kevin Lewis</strong><br>
+                    Neuropsychologist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=emma_clark" target="_blank">
+                <img src="7.jpeg" alt="Counselor 14">
+                <div>
+                    <strong>Ms. Emma Clark</strong><br>
+                    Marriage and Family Therapist
+                </div>
+            </a>
+        </div>
+        <div class="profile">
+            <a href="https://examplechat.com/chat?counselor=mia_walker" target="_blank">
+                <img src="8.jpeg" alt="Counselor 15">
+                <div>
+                    <strong>Dr. Mia Walker</strong><br>
+                    Health Psychologist
+                </div>
+            </a>
+        </div>
+    </div>
+    
+
+   
+        <div id="collegeCounselor" class="content">
+            <h2>Reach Out to a College Counselor</h2>
+            <p>Get in touch with a college counselor to discuss your academic and personal concerns.</p>
+            
+            <form id="collegeForm" onsubmit="submitForm(event)">
+                <label for="collegeSelect">Select your college:</label>
+                <select id="collegeSelect" required>
+                    <option value="" disabled selected>Select your college</option>
+                    <option value="College A">College A</option>
+                    <option value="College B">College B</option>
+                    <option value="College C">College C</option>
+                    <option value="College D">College D</option>
+                    <option value="College E">College E</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        
+            <p id="responseMessage" class="content" style="color: green;"></p>
+        </div>
+        
+    </div>
+
+    <div id="selfHelp" class="content">
+        <h2>Self Help Resources</h2>
+        <h3>Helplines</h3>
+        <p>National Helpline: <strong>1-800-123-4567</strong></p>
+        <p>Suicide Prevention: <strong>1-800-273-8255</strong></p>
+
+        <h3>Self Help Techniques</h3>
+        <ol>
+            <li>
+                <strong>Practice Mindfulness:</strong>
+                <p>Practicing mindfulness involves focusing on the present moment with an open and non-judgmental awareness. It encourages us to observe our thoughts, feelings, and sensations without getting caught up in them.</p>
+            </li>
+            <li>
+                <strong>Keep a Journal:</strong>
+                <p>Keeping a journal can be a powerful tool for self-help and personal growth. By dedicating time each day to reflect on your thoughts, feelings, and experiences, you create a safe space to explore your inner world.</p>
+            </li>
+            <li>
+                <strong>Exercise Regularly:</strong>
+                <p>Exercising regularly is a vital component of self-help and personal well-being. Engaging in physical activity not only improves your physical health but also significantly boosts your mental state.</p>
+            </li>
+            <li>
+                <strong>Reach Out to Friends or Family:</strong>
+                <p>Connecting with loved ones provides a support network that can uplift and inspire us during challenging times.</p>
+            </li>
+        </ol>
+    </div>
+
+    <div id="aboutUs" class="content">
+        <h2>About Us</h2>
+        <p>Déprimécare aims to provide mental health support to the student community all across India by providing a platform to reach out to well-trained and qualified mental health professionals as well as counsellors from their very own colleges while also maintaining an anonymous front to protect their identity.</p>
+        <p>This helps in creating a safe place where students can open up and seek help and support without the fear of being looked at in a negative way. The site connects students to mental health professionals and makes available their profiles so students can choose a professional they feel suits their needs and personal comfort level.</p>
+        <p>The other feature provided is the counsellor connect, which allows students to connect with the counsellors of their very own colleges, thus providing them with a sense of safety, knowing that they have the option to reach out to somebody around them. With the goal of creating a safe community which brings together students and counsellors, Déprimécare is here to render care to all those who need it with the hope of growing and improving with the community.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Déprimécare. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function    openTab(event, tabName) {
+            const tabs = document.querySelectorAll('.content');
+            const tabButtons = document.querySelectorAll('.tab');
+            console.log(tabs)
+            console.log(tabButtons)
+
+            
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            
+            tabButtons.forEach(button => {
+                button.classList.remove('active-tab');
+            });
+
+            
+            document.getElementById(tabName).classList.add('active');
+
+            
+            event.currentTarget.classList.add('active-tab');
+
+            
+        }
+        function submitForm(event) {
+        event.preventDefault();
+        const selectedCollege = document.getElementById("collegeSelect").value;
+        const counselors = {
+            "College A": [
+    { name: "Dr. Alice Smith", specialty: "Clinical Psychologist", img: "22.jpeg" },
+    { name: "Ms. Rachel Green", specialty: "Counseling Therapist", img: "21.jpeg" },
+    { name: "Mr. Peter Parker", specialty: "Licensed Mental Health Counselor", img: "23.jpeg" },
+    { name: "Dr. Tony Stark", specialty: "School Psychologist", img: "24.jpeg" }
+            ],
+            "College B": [
+    { name: "Dr. Bruce Wayne", specialty: "Psychiatrist", img: "25.jpeg" },
+    { name: "Ms. Diana Prince", specialty: "Clinical Social Worker", img: "20.jpeg" },
+    { name: "Mr. Clark Kent", specialty: "Family Therapist", img: "26.jpeg" },
+    { name: "Dr. Barry Allen", specialty: "Substance Abuse Counselor", img: "27.jpeg" }
+            ],
+           "College C": [
+    { name: "Dr. Peter Parker", specialty: "Clinical Psychologist", img: "28.jpeg" },
+    { name: "Ms. Natasha Romanoff", specialty: "Counseling Psychologist", img: "19.jpeg" },
+    { name: "Mr. Stephen Strange", specialty: "Psychiatrist", img: "29.jpeg" },
+    { name: "Dr. Wanda Maximoff", specialty: "Clinical Social Worker", img: "30.jpeg" }
+],
+"College D": [
+    { name: "Dr. Tony Stark", specialty: "Psychiatrist", img: "3.jpeg1" },
+    { name: "Ms. Carol Danvers", specialty: "Mental Health Counselor", img: "18.jpeg" },
+    { name: "Mr. Bruce Banner", specialty: "Clinical Psychologist", img: "32.jpeg" },
+    { name: "Dr. Stephen Rogers", specialty: "Family Therapist", img: "33.jpeg" }
+],
+"College E": [
+    { name: "Dr. Barry Allen", specialty: "Substance Abuse Counselor", img: "34.jpeg" },
+    { name: "Ms. Jean Grey", specialty: "Psychiatric Nurse Practitioner", img: "17.jpeg" },
+    { name: "Mr. Victor Stone", specialty: "School Counselor", img: "35.jpeg"},
+    { name: "Dr. Ororo Munroe", specialty: "Trauma Specialist", img: "12.jpeg" }
+]
+
+        };
+
+        const selectedCounselors = counselors[selectedCollege];
+        let profilesHTML = `<h3>Counselors from ${selectedCollege}</h3>`;
+        selectedCounselors.forEach(counselor => {
+            profilesHTML += `
+                <div class="profile">
+                    <a href="https://examplechat.com/chat?counselor=${counselor.name.replace(/\s+/g, '_').toLowerCase()}" target="_blank">
+                        <img src="${counselor.img}" alt="${counselor.name}">
+                        <div>
+                            <strong>${counselor.name}</strong><br>
+                            ${counselor.specialty}
+                        </div>
+                    </a>
+                </div>
+            `;
+        });
+
+
+        openTab(event, 'collegeCounselor');
+        
+                
+        document.getElementById("collegeCounselor").innerHTML = profilesHTML + `<br><button onclick="openTab(event, 'home')">Back</button>`;
+    }
+    </script>
+</body>
+</html>
