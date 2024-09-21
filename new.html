@@ -9,86 +9,162 @@
     <meta name="robots" content="INDEX, FOLLOW">
     <title>Déprimécare</title>
     <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #eaeaea;
-            color: #333;
-        }
-        header {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        h1 {
-            font-size: 2.5em;
-            color: #000000;
-            margin: 0;
-        }
-        .tabs {
-            display: flex;
-            justify-content: center;
-            margin-bottom: 20px;
-        }
-        .tab {
-            padding: 15px 25px;
-            background-color: #007BFF;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            margin: 0 5px;
-            cursor: pointer;
-            transition: background-color 0.3s, transform 0.3s;
-            font-size: 1em;
-        }
-        .tab:hover {
-            background-color: #0056b3;
-            transform: scale(1.05);
-        }
-        .content {
-            display: none;
-            background-color: white;
-            border: 1px solid #007BFF;
-            border-radius: 5px;
-            padding: 20px;
-            box-shadow: 0 4px 8px ;
-        }
-        .active {
-            display: block;
-        }
-        .active-tab {
-            background-color: #0056b3;
-        }
-        img {
-            width: 1170px;;
-            height: auto;
-            border-radius: 5px;
-            margin-bottom: 20px;
-        }
-        h2 {
-            color: rgba(0, 0, 0,);
-            margin-top: 0;
-            text-align: center;
-        }
-        .profile {
-            display: flrgba(0, 0, 0, 0.2)ex;
-            align-items: center;
-            margin-bottom: 15px;
-            border-bottom: 1px solid #ccc;
-            padding: 10px 0;
-        }
-        .profile img {
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        footer {
-            text-align: center;
-            margin-top: 30px;
-            font-size: 0.9em;
-            color: #666;
-        }
+       body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #f0f4f8, #e0e7ff);
+    color: #333;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #3b82f6; /* Updated color */
+    margin: 0;
+    font-weight: 800;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tab {
+    padding: 15px 30px;
+    background-color: #3b82f6; /* Updated color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    font-size: 1.1em; /* Increased font size */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Stronger shadow */
+}
+
+.tab:hover {
+    background-color: #2563eb; /* Updated hover color */
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+.content {
+    display: none;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.active {
+    display: block;
+}
+
+.active-tab {
+    background-color: #2563eb; /* Updated active tab color */
+}
+
+img {
+    width: 100%;
+    max-width: 1200px; /* Slightly larger max-width */
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #444;
+    margin-top: 0;
+    text-align: center;
+    font-weight: 700; /* Increased font weight */
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    transition: transform 0.3s;
+}
+
+.profile:hover {
+    background-color: #f1f5f9; /* Softer hover effect */
+    border-radius: 10px;
+    transform: scale(1.02);
+}
+
+.profile img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 2px solid #3b82f6; /* Updated border color */
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1em; /* Increased font size */
+    color: #666;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+button, input[type="submit"] {
+    background-color: #3b82f6; /* Updated color */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1em;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #2563eb; /* Updated hover color */
+    transform: scale(1.05);
+}
+
+input[type="text"], textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border-color: #3b82f6; /* Focus border color */
+    outline: none;
+}
+
+
     </style>
 </head>
 <body>
@@ -111,7 +187,7 @@
         <p>Here, you can find resources and support for mental health and educational counseling.</p>
     </div>
 
-    <div id="mentalHealth" class="content">
+    <div id="mentalHealth" class="content"> `
         <h2>Reach Out to a Mental Health Professional</h2>
         <div class="profile">
             <a href="https://examplechat.com/chat?counselor=sarah_thompson" target="_blank">
@@ -252,8 +328,9 @@
     
 
    
-        <div id="collegeCounselor" class="content">
-            <h2>Reach Out to a College Counselor</h2>
+    <div id="collegeCounselor" class="content">
+        <h2>Reach Out to a College Counselor</h2>
+        <div id="collegeContent">
             <p>Get in touch with a college counselor to discuss your academic and personal concerns.</p>
             
             <form id="collegeForm" onsubmit="submitForm(event)">
@@ -269,10 +346,8 @@
                 <br><br>
                 <input type="submit" value="Submit">
             </form>
-        
-            <p id="responseMessage" class="content" style="color: green;"></p>
         </div>
-        
+        <p id="responseMessage" class="content" style="color: green;"></p>
     </div>
 
     <div id="selfHelp" class="content">
@@ -374,27 +449,43 @@
         };
 
         const selectedCounselors = counselors[selectedCollege];
-        let profilesHTML = `<h3>Counselors from ${selectedCollege}</h3>`;
-        selectedCounselors.forEach(counselor => {
-            profilesHTML += `
-                <div class="profile">
-                    <a href="https://examplechat.com/chat?counselor=${counselor.name.replace(/\s+/g, '_').toLowerCase()}" target="_blank">
-                        <img src="${counselor.img}" alt="${counselor.name}">
-                        <div>
-                            <strong>${counselor.name}</strong><br>
-                            ${counselor.specialty}
-                        </div>
-                    </a>
-                </div>
+            let profilesHTML = `<h3>Counselors from ${selectedCollege}</h3>`;
+            selectedCounselors.forEach(counselor => {
+                profilesHTML += `
+                    <div class="profile">
+                        <a href="https://examplechat.com/chat?counselor=${counselor.name.replace(/\s+/g, '_').toLowerCase()}" target="_blank">
+                            <img src="${counselor.img}" alt="${counselor.name}">
+                            <div>
+                                <strong>${counselor.name}</strong><br>
+                                ${counselor.specialty}
+                            </div>
+                        </a>
+                    </div>
+                `;
+            });
+
+            document.getElementById("collegeContent").innerHTML = profilesHTML + `<br><button onclick="goBack()">Back</button>`;
+        }
+
+        function goBack() {
+            document.getElementById("collegeContent").innerHTML = `
+                <p>Get in touch with a college counselor to discuss your academic and personal concerns.</p>
+                <form id="collegeForm" onsubmit="submitForm(event)">
+                    <label for="collegeSelect">Select your college:</label>
+                    <select id="collegeSelect" required>
+                        <option value="" disabled selected>Select your college</option>
+                        <option value="College A">College A</option>
+                        <option value="College B">College B</option>
+                        <option value="College C">College C</option>
+                        <option value="College D">College D</option>
+                        <option value="College E">College E</option>
+                    </select>
+                    <br><br>
+                    <input type="submit" value="Submit">
+                </form>
             `;
-        });
-
-
-        openTab(event, 'collegeCounselor');
-        
-                
-        document.getElementById("collegeCounselor").innerHTML = profilesHTML + `<br><button onclick="openTab(event, 'home')">Back</button>`;
-    }
+        }
+    
     </script>
 </body>
 </html>
