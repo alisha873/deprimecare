@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Déprimécare</title>
+</head>
+<body>
+    <header>
+        <h1>Déprimécare</h1>
+    </header>
+    <main>
+        <h2>Welcome to Déprimécare</h2>
+        <p>Here, you can find resources and support for mental health and educational counseling.</p>
+        <div>
+            <a href="{% url 'mental_health' %}">Reach Out to a Mental Health Professional</a><br>
+            <a href="{% url 'college_counselor' %}">Reach Out to a College Counselor</a><br>
+            <a href="{% url 'self_help' %}">Self Help Resources</a><br>
+            <a href="{% url 'about_us' %}">About Us</a><br>
+        </div>
+    </main>
+</body>
+</html>

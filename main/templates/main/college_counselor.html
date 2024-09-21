@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reach Out to a College Counselor</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #007BFF;
+        }
+        .counselor-info {
+            background-color: white;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .counselor-info strong {
+            display: block;
+            font-size: 1.2em;
+        }
+        .counselor-info em {
+            display: block;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="collegeCounselor" class="content">
+            <h2>Reach Out to a College Counselor</h2>
+            <p>Get in touch with a college counselor to discuss your academic and personal concerns.</p>
+            
+            <form id="collegeForm" onsubmit="submitForm(event)">
+                <label for="collegeSelect">Select your college:</label>
+                <select id="collegeSelect" required>
+                    <option value="" disabled selected>Select your college</option>
+                    <option value="College A">College A</option>
+                    <option value="College B">College B</option>
+                    <option value="College C">College C</option>
+                    <option value="College D">College D</option>
+                    <option value="College E">College E</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+        
+            <p id="responseMessage" class="content" style="color: green;"></p>
+        </div>
+        <p>If you need further assistance, don't hesitate to reach out to your college’s counseling office or visit their website for more resources.</p>
+        <div></div>
+    </main>
+</body>
+</html>
